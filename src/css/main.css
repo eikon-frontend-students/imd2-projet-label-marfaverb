@@ -22,12 +22,42 @@ body {
   background-color: #101010;
   color: white;
   font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header "
+    "hero   hero   hero "
+    "nav    main   main     "
+    "footer footer footer ";
+  margin: 40px 68px 0px 68px;
 }
 
 header {
+  grid-area: header;
   display: flex;
-  margin: 40px 68px 0px 68px;
   align-items: center;
+  background-color: azure;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: aqua;
+}
+
+nav {
+  grid-area: nav;
+  background-color: antiquewhite;
+}
+
+main {
+  grid-area: main;
+  background-color: blue;
+}
+
+footer {
+  grid-area: footer;
+  background-color: aquamarine;
 }
 
 .menu {
@@ -56,4 +86,9 @@ header {
 
 .down-arrow {
   width: 14px;
+}
+
+.albums {
+  display: flex;
+  gap: 35px;
 }
