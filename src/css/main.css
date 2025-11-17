@@ -12,3 +12,48 @@ img,
 video {
   display: block;
 }
+
+@font-face {
+  font-family: "Milker";
+  src: url("fonts");
+}
+
+body {
+  background-color: #101010;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  margin: 40px 68px 0px 68px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 65px;
+  margin-left: 165px;
+}
+
+.text-header {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contacts {
+  display: flex;
+  gap: 15px;
+  margin-left: 354px;
+}
+
+.language {
+  display: flex;
+  margin-left: 64px;
+  align-items: center;
+  gap: 5px;
+}
+
+.down-arrow {
+  width: 14px;
+}
