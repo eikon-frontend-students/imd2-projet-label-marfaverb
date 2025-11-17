@@ -13,8 +13,6 @@ video {
   display: block;
 }
 
-
 body {
-  background: black;
-  color: white;
+  background-color: red;
 }
