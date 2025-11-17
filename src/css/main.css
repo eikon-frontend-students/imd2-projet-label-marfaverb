@@ -15,7 +15,7 @@ video {
 
 @font-face {
   font-family: "Milker";
-  src: url("fonts");
+  src: url("/src/fonts/Milker.otf") format(".otf");
 }
 
 body {
