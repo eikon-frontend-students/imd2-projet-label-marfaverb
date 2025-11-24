@@ -16,9 +16,9 @@
     <header>
       <img src="img/logo.svg" alt="Logo Jyp Leader in Entertainment" />
       <div class="menu">
-        <h2 class="text-header">Home</h2>
-        <h2 class="text-header">Artists</h2>
-        <h2 class="text-header">About JYP</h2>
+        <p class="text-header">Home</p>
+        <p class="text-header">Artists</p>
+        <p class="text-header">About JYP</p>
       </div>
 
       <div class="search-bar">
@@ -43,7 +43,7 @@
       </div>
 
       <div class="language">
-        <h2 class="text-header">EN</h2>
+        <p class="language-name">EN</p>
         <img
           class="down-arrow"
           src="img/down-arrow.svg"
@@ -68,28 +68,49 @@
 
     <main>
       <div class="last-releases">
-        <h1>Last releases</h1>
+        <div class="title">
+          <p class="decor-title">albums</p>
+          <h1 class="title-main">Last releases</h1>
+          <p class="decor-title">albums</p>
+        </div>
         <div class="albums">
-          стрелка
+          <p class="arrows">
+            <img class="arrow-left" src="img/arrow.svg" alt="" />
+          </p>
           <div class="album">
             <img src="img/nmixx-album.png" alt="Nmixx Album Blue Valentine" />
-            <p class="group-date">NMIXX | 2025-10-17</p>
-            <p class="Name Album">Blue Valentine (MIXX Ver.)</p>
+            <div class="info-card">
+              <p class="group-date">NMIXX | 2025-10-17</p>
+              <p class="name-album">Blue Valentine (MIXX Ver.)</p>
+            </div>
           </div>
           <div class="album">
             <img
               src="img/xdinary-album.png"
               alt="Xdinary Heroes Album LXVE to DEATH"
             />
-            <p class="group-date">Xdinary Heroes | 2025-10-24</p>
-            <p class="Name Album">LXVE to DEATH</p>
+            <div class="info-card">
+              <p class="group-date">Xdinary Heroes | 2025-10-24</p>
+              <p class="name-album">LXVE to DEATH</p>
+            </div>
           </div>
           <div class="album">
             <img src="img/nexz-album.png" alt="Nexz Album Beat Boxer" />
-            <p class="group-date">NEXZ | 2025-10-27</p>
-            <p class="Name Album">Beat-Boxer</p>
+            <div class="info-card">
+              <p class="group-date">NEXZ | 2025-10-27</p>
+              <p class="name-album">Beat-Boxer</p>
+            </div>
           </div>
-          стрелка
+          <p class="arrows">
+            <img class="arrow-right" src="img/arrow.svg" alt="" />
+          </p>
+        </div>
+        <div class="slider-dot-control">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+          <label for="slide5"></label>
         </div>
       </div>
     </main>
@@ -100,30 +121,32 @@
       />
       <div class="footer-navigation">
         <div class="nav-footer">
-          <h2 class="menu-footer">About JYP</h2>
-          <h2 class="menu-footer">Artists</h2>
+          <p>About JYP</p>
+          <p>Artists</p>
         </div>
         <p class="copyright">
           © 2025 JYP Entertainment Corporation. All right reserved
         </p>
       </div>
-      <div class="contacts-footer">
-        <a href="">
-          <img src="img/youtube.svg" alt="Youtube" />
-        </a>
-        <a href="">
-          <img src="img/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="">
-          <img src="img/facebook.svg" alt="Facebook" />
-        </a>
-        <a href="">
-          <img src="img/twitter.svg" alt="Twitter" />
-        </a>
-      </div>
-      <div class="email">
-        <p>Investor relations:</p>
-        <p>jype_ir@jype.com</p>
+      <div class="info-contact-footer">
+        <div class="contacts-footer">
+          <a href="">
+            <img src="img/youtube.svg" alt="Youtube" />
+          </a>
+          <a href="">
+            <img src="img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="">
+            <img src="img/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="">
+            <img src="img/twitter.svg" alt="Twitter" />
+          </a>
+        </div>
+        <div class="email">
+          <p class="investor">Investor relations:</p>
+          <p class="email-address">jype_ir@jype.com</p>
+        </div>
       </div>
     </footer>
     <script src="js/main.js" type="module"></script>
