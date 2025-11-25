@@ -173,7 +173,7 @@ footer {
     display: inline-block;
     width: 11px;
     height: 11px;
-    border: 1px solid var(--base-white-100, #fff);
+    border: 1px solid #fff;
     opacity: 0.5;
     @include transition(all 0.3s);
 
@@ -188,7 +188,7 @@ h3 {
   width: 35px;
   height: 5px;
   border-radius: 1px;
-  border: 0.5px solid var(--base-white-100, #fff);
+  border: 0.5px solid #fff;
   opacity: 0.5;
 }
 
@@ -276,4 +276,42 @@ h3 {
   border-bottom: solid 1px #fff;
   width: 100%;
   margin-top: 170px;
+}
+
+.glass-label {
+  display: flex;
+  padding: 53px 57px;
+  justify-content: center;
+  align-items: center;
+  gap: 172px;
+  background-color: #001b40;
+
+  .chiffre {
+    font-family: "Milker";
+    font-size: 60px;
+  }
+
+  .title-chiffre {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .example-impact {
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.5;
+  }
+
+  .impact {
+    display: flex;
+    padding: 5px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.5px solid #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
