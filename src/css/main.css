@@ -280,10 +280,11 @@ h3 {
 
 .glass-label {
   display: flex;
-  padding: 53px 57px;
+  width: max-content;
   justify-content: center;
-  align-items: center;
   gap: 172px;
+  padding: 53px 57px;
+  align-items: center;
   background-color: #001b40;
 
   .chiffre {
@@ -311,7 +312,13 @@ h3 {
     gap: 10px;
     border-radius: 100px;
     border: 0.5px solid #fff;
+    background-color: 0;
     font-size: 12px;
     text-transform: uppercase;
+    margin-top: 20px;
+  }
+
+  .text-impact {
+    gap: -5px;
   }
 }
