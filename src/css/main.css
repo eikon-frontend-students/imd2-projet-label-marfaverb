@@ -8,6 +8,13 @@ a {
   color: inherit;
 }
 
+:root {
+  --container-max: 1200px;
+  --fluid-padding: clamp(0.75rem, 2.5vw, 3rem);
+  --fluid-gap: clamp(0.5rem, 1.5vw, 2.5rem);
+  --base-font: clamp(14px, 1.6vw, 18px);
+}
+
 img,
 video {
   display: block;
@@ -25,12 +32,14 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: var(--base-font);
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 40px 68px 0px 68px;
+  padding: clamp(0.75rem, 2.5vw, 2.25rem) var(--fluid-padding);
 }
 
 .hero {
@@ -48,159 +57,158 @@ nav {
 }
 
 main {
-  margin: 40px 68px 0px 68px;
+  max-width: var(--container-max);
+  margin: 2.5rem auto 0;
+  padding: 0 var(--fluid-padding);
 }
 
 footer {
+  width: 100%;
+  padding: var(--fluid-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
   display: flex;
   align-items: center;
-  gap: 117px;
-  margin: 170px auto 0px 62px;
+  gap: 2rem;
 }
 
 .nav-footer {
   display: flex;
-  gap: 55px;
-  font-size: 14px;
+  gap: clamp(1rem, 4vw, 3.4rem);
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
   text-transform: uppercase;
 }
 
 .footer-navigation {
-  padding: 19px 0 19px 34px;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 3px;
+  padding: 1.2rem 0 1.2rem 2.1rem;
+  gap: 0.2rem;
   flex-wrap: wrap;
   border-left: 1px solid #fff;
 }
 
 .copyright {
-  font-size: 14px;
-  letter-spacing: -0.56px;
+  font-size: 0.875rem;
+  letter-spacing: -0.035rem;
   opacity: 0.4;
 }
 
 .contacts-footer {
   display: flex;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .investor {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .email {
   display: flex;
-  gap: 15px;
+  gap: 0.9rem;
   opacity: 0.6;
 }
 
 .email-address {
-  font-size: 12px;
-}
-
-.info-contact-footer {
-  margin-left: 183px;
+  font-size: 0.75rem;
 }
 
 .menu {
   display: flex;
-  gap: 65px;
-  margin-left: 90px;
-  margin-right: 90px;
+  gap: clamp(1rem, 4vw, 4rem);
+  margin-inline: auto;
 }
 
 .text-header {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
 }
 
 .contacts {
   display: flex;
-  gap: 15px;
+  gap: 0.9rem;
   margin-left: auto;
 }
 
 .language {
   display: flex;
-  margin-left: 64px;
+  margin-left: 4rem;
   align-items: center;
-  gap: 5px;
+  gap: 0.3rem;
 }
 
 .albums {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 2.2rem;
+}
 
-  .album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .info-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: -5px;
-      align-self: stretch;
-      width: auto;
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
 
-      .group-date {
-        font-size: 16px;
-        opacity: 0.5;
-      }
+.group-date {
+  font-size: 1rem;
+  opacity: 0.5;
+}
 
-      .name-album {
-        font-size: 18px;
-      }
-    }
-  }
+.name-album {
+  font-size: 1.125rem;
 }
 
 .slider-dot-control {
   width: 100%;
   bottom: 0;
   text-align: center;
+}
 
-  label {
-    margin-top: 30px;
-    cursor: pointer;
-    border-radius: 11px;
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border: 1px solid #fff;
-    opacity: 0.5;
-    @include transition(all 0.3s);
+label {
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 11px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
 
-    &:hover {
-      background: #fff;
-      opacity: 1;
-    }
-  }
+label:hover {
+  background: #fff;
+  opacity: 1;
 }
 
 h3 {
-  width: 35px;
-  height: 5px;
-  border-radius: 1px;
-  border: 0.5px solid #fff;
+  width: 2.2rem;
+  height: 0.3rem;
+  border-radius: 0.06rem;
+  border: 0.03rem solid #fff;
   opacity: 0.5;
 }
 
 .search {
   display: flex;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  border-radius: 20px;
-  width: auto;
-  padding: 9px 21px 6px 20px;
+  border-radius: 1.25rem;
+  padding: 0.56rem 1.3rem 0.37rem 1.25rem;
   align-items: center;
-  gap: 165px;
+  gap: clamp(0.6rem, 12vw, 10.3rem);
   background: linear-gradient(90deg, #001b40 0%, #000b1a 100%);
   color: #fff;
 }
@@ -209,116 +217,116 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-top: 170px;
-  margin-bottom: 70px;
+  gap: 2.5rem;
+  margin-top: clamp(2rem, 12vh, 10.6rem);
+  margin-bottom: clamp(1rem, 4vh, 4.4rem);
+}
 
-  .title-main {
-    font-family: "Milker";
-    font-size: 90px;
-    text-align: center;
-  }
+.title-main {
+  font-family: "Milker";
+  font-size: clamp(2rem, 6vw, 5.6rem);
+  text-align: center;
+}
 
-  .decor-title {
-    font-size: 22px;
-    font-weight: 250;
-    text-transform: uppercase;
-  }
+.decor-title {
+  font-size: 1.37rem;
+  font-weight: 250;
+  text-transform: uppercase;
 }
 
 .arrows {
-  height: 46px;
-  width: 47px;
+  height: 2.9rem;
+  width: 2.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  padding: 10px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  overflow: hidden;
+  border-radius: 1.9rem;
+  padding: 0.6rem;
   color: #fff;
-  z-index: 1;
   transition: 0.5s;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(0.9rem);
+}
 
-  .arrow-left {
-    transform: scaleX(-1);
-  }
+.arrow-left {
+  transform: scaleX(-1);
 }
 
 .groups {
   display: flex;
-  gap: 34px;
+  gap: var(--fluid-gap);
   align-items: end;
   justify-content: center;
+}
 
-  .group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .playlist {
-    text-transform: uppercase;
-    font-size: 16px;
-  }
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.playlist {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .carousel-music {
   display: flex;
-  gap: 100px;
-  padding: 50px 0px;
-  border-top: solid 1px #fff;
-  border-bottom: solid 1px #fff;
+  gap: clamp(1rem, 6vw, 6.25rem);
+  padding: clamp(1rem, 3vw, 3.1rem) 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   width: 100%;
-  margin-top: 170px;
+  margin-top: clamp(2rem, 12vh, 10.6rem);
 }
 
 .glass-label {
   display: flex;
-  width: max-content;
+  width: 100%;
+  max-width: var(--container-max);
   justify-content: center;
-  gap: 172px;
-  padding: 53px 57px;
+  gap: clamp(1rem, 8vw, 10.75rem);
+  padding: clamp(1rem, 3vw, 3.3rem) clamp(1rem, 4vw, 3.5rem);
   align-items: center;
   background-color: #001b40;
+  margin: 0 auto;
+}
 
-  .chiffre {
-    font-family: "Milker";
-    font-size: 60px;
-  }
+.chiffre {
+  font-family: "Milker";
+  font-size: clamp(1.5rem, 4vw, 3.75rem);
+}
 
-  .title-chiffre {
-    font-size: 18px;
-    text-transform: uppercase;
-  }
+.title-chiffre {
+  font-size: clamp(0.9rem, 1.2vw, 1.125rem);
+  text-transform: uppercase;
+}
 
-  .example-impact {
-    overflow: hidden;
-    font-size: 14px;
-    font-weight: 300;
-    opacity: 0.5;
-  }
+.example-impact {
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  font-weight: 300;
+  opacity: 0.5;
+  overflow: hidden;
+}
 
-  .impact {
-    display: flex;
-    padding: 5px 48px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 0.5px solid #fff;
-    background-color: 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-top: 20px;
-  }
+.impact {
+  display: flex;
+  padding: 0.3rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 6.25rem;
+  border: 0.03rem solid #fff;
+  background-color: transparent;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  color: #fff;
+}
 
-  .text-impact {
-    gap: -5px;
-  }
+.text-impact {
+  gap: -0.3rem;
 }
