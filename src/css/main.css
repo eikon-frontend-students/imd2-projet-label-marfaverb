@@ -371,11 +371,15 @@ h3 {
   font-size: 25px;
   display: inline-flex;
   padding: 8px 21px;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 31px;
   background: rgba(190, 9, 9, 0.4);
   box-shadow: 0 14.4px 14.4px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(14.4px);
+}
+
+.upcoming-container {
+  display: flex;
+  justify-content: center;
 }
