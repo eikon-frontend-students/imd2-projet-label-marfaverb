@@ -148,13 +148,32 @@ footer {
   width: auto;
 }
 
-.group-date {
+.card-subtitle {
   font-size: 16px;
   opacity: 0.5;
 }
 
-.name-album {
+.card-title {
   font-size: 18px;
+}
+
+.lxve-title {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.lxve-album img {
+  width: 120%;
+}
+
+.lxve-album .info-card .card-subtitle {
+  font-size: 16px;
+}
+
+.lxve-album .info-card .card-title {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 250px;
 }
 
 .slider-dot-control {
@@ -217,7 +236,7 @@ h3 {
 
 .decor-title {
   font-size: 21.92px;
-  font-weight: 250;
+  font-weight: 150;
   text-transform: uppercase;
 }
 
@@ -270,15 +289,23 @@ h3 {
   margin-top: 169.6px;
 }
 
+.glass-label-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-105px);
+}
+
 .glass-label {
   display: flex;
   width: max-content;
-  justify-content: center;
+  align-content: center;
   gap: 172px;
-  padding: 52.8px 56px;
-  align-items: center;
-  background-color: #001b40;
-  margin-left: 11vh;
+  padding: 52px 56px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 14.4px 14.4px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14.4px);
 }
 
 .chiffre {
@@ -296,12 +323,14 @@ h3 {
   font-weight: 300;
   opacity: 0.5;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 175px;
 }
 
 .impact {
   display: flex;
-  padding: 4.8px 48px;
-  justify-content: center;
+  padding: 6px 48px;
   align-items: center;
   gap: 9.6px;
   border-radius: 100px;
@@ -311,4 +340,42 @@ h3 {
   text-transform: uppercase;
   margin-top: 20px;
   color: #fff;
+}
+
+.glass-label .info-impact:nth-child(1) .chiffre {
+  color: #ff4f4f;
+}
+
+.glass-label .info-impact:nth-child(2) .chiffre {
+  color: #ffff4f;
+}
+
+.glass-label .info-impact:nth-child(3) .chiffre {
+  color: #4f9eff;
+}
+
+.upcoming-container {
+  display: flex;
+  gap: 34px;
+}
+
+.upcoming-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-label {
+  font-family: Milker;
+  font-size: 25px;
+  display: inline-flex;
+  padding: 8px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 31px;
+  background: rgba(190, 9, 9, 0.4);
+  box-shadow: 0 14.4px 14.4px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14.4px);
 }
