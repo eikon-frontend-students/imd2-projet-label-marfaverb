@@ -34,9 +34,6 @@ header {
   padding: 32px 4vw;
 }
 
-.hero {
-}
-
 h1 {
   font-family: "Milker";
   font-size: 176px;
@@ -254,10 +251,10 @@ h3 {
   margin-bottom: 70.4px;
 }
 
-.title-main {
+h2 {
   font-family: "Milker";
   font-size: 90px;
-  text-align: center;
+  align-items: center;
 }
 
 .decor-title {
@@ -382,7 +379,7 @@ h3 {
 
 .upcoming-container {
   display: flex;
-  gap: 34px;
+  gap: 50px;
 }
 
 .upcoming-label {
@@ -392,20 +389,55 @@ h3 {
   align-items: center;
 }
 
+.image-upcoming {
+  box-shadow: -8px 1px 13px 0 rgba(190, 9, 9, 0.1) inset,
+    0 16px 28.5px 0 rgba(0, 0, 0, 0.05);
+}
+
 .card-label {
   font-family: Milker;
   font-size: 25px;
   display: inline-flex;
   padding: 8px 21px;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
   border-radius: 31px;
-  background: rgba(190, 9, 9, 0.4);
   box-shadow: 0 14.4px 14.4px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(14.4px);
+  position: relative;
+  top: 20px;
+  right: -100px;
+}
+
+.upcoming-container .upcoming-label:nth-child(1) .card-label {
+  background: rgba(190, 9, 9, 0.4);
+}
+
+.upcoming-container .upcoming-label:nth-child(2) .card-label {
+  background: rgba(9, 69, 190, 0.4);
 }
 
 .upcoming-container {
   display: flex;
   justify-content: center;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
+  font-weight: 200;
 }
