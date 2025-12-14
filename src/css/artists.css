@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 170px;
+  margin-bottom: 70.4px;
+}
+
+h2 {
+  font-family: "Milker";
+  font-size: 90px;
+  align-items: center;
+}
+
+.decor-title {
+  font-size: 21.92px;
+  font-weight: 150;
+  text-transform: uppercase;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plushies {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
