@@ -28,5 +28,66 @@ h2 {
 .plushies {
   display: flex;
   gap: 22px;
+  align-items: center;
+}
+
+.image-artist {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  gap: 16px;
+}
+
+.about-artist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-artist {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.text-about {
+  display: flex;
+  gap: 64px;
+  font-size: 16px;
+  line-height: 145.56%;
+  list-style: none;
+}
+
+.category {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 164%;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.text-about ul {
+  list-style: none;
+}
+
+.spotify {
+  display: flex;
+  align-items: center;
+}
+
+.music-playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-playlist img {
+  max-width: max-content;
+}
+
+.music-container {
+  display: flex;
   justify-content: center;
 }
