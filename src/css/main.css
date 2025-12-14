@@ -179,6 +179,7 @@ footer {
   font-size: 18px;
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
+  text-decoration: none;
 }
 
 .contacts-header {
