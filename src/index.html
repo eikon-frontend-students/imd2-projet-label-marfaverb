@@ -33,18 +33,49 @@
         <button>See more</button>
       </section>
 
-      <nav>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
+      <nav class="side-nav">
+        <ul>
+          <li>
+            <a href="#last-releases">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Last releases</span>
+            </a>
+          </li>
+          <li>
+            <a href="#our-playlists">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Our playlists</span>
+            </a>
+          </li>
+          <li>
+            <a href="#our-impact">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Our impact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#upcoming">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Upcoming</span>
+            </a>
+          </li>
+          <li>
+            <a href="#events">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contacts">
+              <span class="nav-rect"></span>
+              <span class="nav-label">Contacts</span>
+            </a>
+          </li>
+        </ul>
       </nav>
 
       <main>
-        <div class="last-releases">
+        <section class="last-releases">
           <div class="title">
             <p class="decor-title">albums</p>
             <h2>Last releases</h2>
@@ -54,14 +85,14 @@
             <p class="arrows">
               <img class="arrow-left" src="img/arrow.svg" alt="" />
             </p>
-            <div class="album">
+            <article class="album">
               <img src="img/nmixx-album.png" alt="Nmixx Album Blue Valentine" />
               <div class="info-card">
                 <p class="card-subtitle">NMIXX | 2025-10-17</p>
                 <p class="card-title">Blue Valentine (MIXX Ver.)</p>
               </div>
-            </div>
-            <div class="album lxve-album">
+            </article>
+            <article class="album">
               <img
                 src="img/xdinary-album.png"
                 alt="Xdinary Heroes Album LXVE to DEATH"
@@ -70,14 +101,14 @@
                 <p class="card-subtitle">Xdinary Heroes | 2025-10-24</p>
                 <p class="card-title">LXVE to DEATH</p>
               </div>
-            </div>
-            <div class="album">
+            </article>
+            <article class="album">
               <img src="img/nexz-album.png" alt="Nexz Album Beat Boxer" />
               <div class="info-card">
                 <p class="card-subtitle">NEXZ | 2025-10-27</p>
                 <p class="card-title">Beat-Boxer</p>
               </div>
-            </div>
+            </article>
             <p class="arrows">
               <img class="arrow-right" src="img/arrow.svg" alt="" />
             </p>
@@ -89,8 +120,8 @@
             <label for="slide4"></label>
             <label for="slide5"></label>
           </div>
-        </div>
-        <div class="our-playlists">
+        </section>
+        <section class="our-playlists">
           <div class="title">
             <p class="decor-title">music</p>
             <h2>Our playlists</h2>
@@ -132,8 +163,8 @@
             <img src="img/mma.svg" alt="MMA" />
             <img src="img/mama.svg" alt="MAMA" />
           </div>
-        </div>
-        <div class="our-impact">
+        </section>
+        <section class="our-impact">
           <div class="title">
             <p class="decor-title">reach</p>
             <h2>Our impact</h2>
@@ -171,15 +202,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="upcoming">
+        </section>
+        <section class="upcoming">
           <div class="title">
             <p class="decor-title">song</p>
             <h2>Upcoming</h2>
             <p class="decor-title">song</p>
           </div>
           <div class="upcoming-container">
-            <div class="upcoming-label">
+            <article class="upcoming-label">
               <p class="card-label">NEW</p>
               <img
                 class="image-upcoming"
@@ -190,8 +221,8 @@
                 <p class="card-subtitle">ITZY | 2025-10-10</p>
                 <p class="card-title">Tunnel Vision</p>
               </div>
-            </div>
-            <div class="upcoming-label">
+            </article>
+            <article class="upcoming-label">
               <p class="card-label">SOON</p>
               <img
                 class="image-upcoming"
@@ -202,36 +233,39 @@
                 <p class="card-subtitle">Stray Kids | 2025-11-21</p>
                 <p class="card-title">Do It</p>
               </div>
-            </div>
+            </article>
           </div>
-        </div>
-        <div class="events">
-        <div class="title">
-          <p class="decor-title">program</p>
-          <h2>Events</h2>
-          <p class="decor-title">program</p>
-        </div>
-        <div class="events-container">
-          <div class="event-card">
-            <img src="img/twice-world-tour.png" alt="Twice World Tour" />
-            <div class="info-card">
-              <p class="event-date">TWICE | 2026.01</p>
-              <p class="event-title">This Is For (World Tour)</p>
-            </div>
+        </section>
+        <section class="events">
+          <div class="title">
+            <p class="decor-title">program</p>
+            <h2>Events</h2>
+            <p class="decor-title">program</p>
           </div>
-          <div class="event-card">
-            <img src="img/new-group.png" alt="New Girl Group" />
-            <div class="info-card">
-              <p class="event-date">???? | 2026</p>
-              <p class="event-title">New girl group</p>
-            </div>
+          <div class="events-container">
+            <article class="event-card">
+              <img src="img/twice-world-tour.png" alt="Twice World Tour" />
+              <div class="info-card">
+                <p class="event-date">TWICE | 2026.01</p>
+                <p class="event-title">This Is For (World Tour)</p>
+              </div>
+            </article>
+            <article class="event-card">
+              <img src="img/new-group.png" alt="New Girl Group" />
+              <div class="info-card">
+                <p class="event-date">???? | 2026</p>
+                <p class="event-title">New girl group</p>
+              </div>
+            </article>
           </div>
-        </div>
-        <div class="title">
-          <p class="decor-title">network</p>
-          <h2>Contacts</h2>
-          <p class="decor-title">network</p>
-        </div>
+        </section>
+        <section class="contacts">
+          <div class="title">
+            <p class="decor-title">network</p>
+            <h2>Contacts</h2>
+            <p class="decor-title">network</p>
+          </div>
+        </section>
       </main>
       <include src="footer.html"></include>
       <script src="js/main.js" type="module"></script>

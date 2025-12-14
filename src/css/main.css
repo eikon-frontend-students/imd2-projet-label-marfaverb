@@ -61,14 +61,57 @@ h1 {
   color: white;
 }
 
-nav {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+.side-nav {
   position: fixed;
-  margin-top: 500px;
-  margin-left: 32px;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.side-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-rect {
+  width: 2.2rem;
+  height: 0.3rem;
+  border-radius: 0.06rem;
+  border: 0.03rem solid #fff;
+  opacity: 0.5;
+  transition: all 0.3s;
+  display: block;
+}
+
+.nav-label {
+  margin-left: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 14px;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateX(-10px);
+}
+
+.side-nav a:hover .nav-rect {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.side-nav a:hover .nav-label {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 footer {
@@ -138,7 +181,7 @@ footer {
   border-bottom: 1px solid #fff;
 }
 
-.contacts {
+.contacts-header {
   display: flex;
   gap: 14.4px;
   margin-left: auto;
@@ -180,23 +223,8 @@ footer {
   font-size: 18px;
 }
 
-.lxve-title {
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-.lxve-album img {
+.albums .album:nth-child(3) img {
   width: 120%;
-}
-
-.lxve-album .info-card .card-subtitle {
-  font-size: 16px;
-}
-
-.lxve-album .info-card .card-title {
-  font-size: 20px;
-  text-decoration: underline;
-  font-weight: 250px;
 }
 
 .slider-dot-control {
@@ -220,14 +248,6 @@ label {
 label:hover {
   background: #fff;
   opacity: 1;
-}
-
-h3 {
-  width: 2.2rem;
-  height: 0.3rem;
-  border-radius: 0.06rem;
-  border: 0.03rem solid #fff;
-  opacity: 0.5;
 }
 
 .search {
