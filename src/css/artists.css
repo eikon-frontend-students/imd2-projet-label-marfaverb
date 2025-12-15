@@ -60,7 +60,6 @@ h2 {
 }
 
 .category {
-  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 164%;
@@ -88,6 +87,45 @@ h2 {
 }
 
 .music-container {
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "video1   video2 "
+    "video3   video4 ";
+  gap: 36px;
+}
+
+.youtube-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video1 {
+  grid-area: video1;
+}
+.video2 {
+  grid-area: video2;
+}
+.video3 {
+  grid-area: video3;
+}
+.video4 {
+  grid-area: video4;
+}
+
+.waiting {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.wait {
   display: flex;
   justify-content: center;
 }
