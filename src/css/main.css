@@ -522,9 +522,54 @@ h4 {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  display: flex;
   justify-content: center;
+}
+
+.hero-title {
+  position: absolute;
+  top: -230px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-artist {
+  position: relative;
+  z-index: 3;
+}
+
+.bg-left,
+.bg-right {
+  position: absolute;
+  top: -60px;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.bg-left {
+  left: 15%;
+}
+
+.bg-right {
+  right: 15%;
+}
+
+.group-info {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .button {
