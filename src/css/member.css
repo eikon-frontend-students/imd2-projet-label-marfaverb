@@ -1,0 +1,45 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: "Milker";
+  font-size: 60px;
+}
+
+.category {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 164%;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.text-about ul {
+  list-style: none;
+}
+
+.text-about {
+  display: flex;
+  gap: 64px;
+  font-size: 16px;
+  line-height: 145.56%;
+}
+
+.info-member {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 165px 65px 0px 65px;
+}
+
+.photo {
+  display: flex;
+  gap: 10px;
+}
+
+.leebit {
+  width: 91px;
+}
