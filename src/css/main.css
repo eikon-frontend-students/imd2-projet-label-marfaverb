@@ -126,6 +126,13 @@ footer {
   gap: 32px;
 }
 
+.text-footer {
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .nav-footer {
   display: flex;
   gap: 54.4px;
